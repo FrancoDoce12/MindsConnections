@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { Mode } from "./constants&Enums";
-import { contextMode } from "./contexts";
-
-const [mode, setMode] = useState<Mode>("light");
+import { Theme } from "./constants&Enums";
+import { contextTheme } from "./contexts";
 
 const App = () => {
+
+    const [theme, setTheme] = useState<Theme>("light");
+
     return (
-        <contextMode.Provider value={mode}>
-            <h1>App Runing!!</h1>
-        </contextMode.Provider>
+        <contextTheme.Provider value={"light"}>
+            <h1 className='text-blue-600' >App Runing!!</h1>
+        </contextTheme.Provider>
     );
 }
 

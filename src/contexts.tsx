@@ -1,6 +1,6 @@
 import { createContext } from "react";
-import { Mode } from "./constants&Enums";
+import { Theme } from "./constants&Enums";
 
-const contextMode = createContext<Mode>("light");
+const contextTheme = createContext<Theme>("light");
 
-export { contextMode };
+export { contextTheme };

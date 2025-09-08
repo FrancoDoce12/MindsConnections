@@ -1,3 +1,3 @@
-type Mode = "dark" | "light";
+type Theme = "dark" | "light";
 
-export { Mode };
+export { Theme };
