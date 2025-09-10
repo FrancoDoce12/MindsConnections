@@ -1,1 +1,5 @@
 @import 'tailwindcss';
+
+/* this rule makes the ' dark:* ' utilities class to be 
+applied whenever the 'dark'class is present earlier in the HTML */
+@custom-variant dark (&:where(.dark, .dark *));

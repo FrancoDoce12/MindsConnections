@@ -1,3 +1,7 @@
 type Theme = "dark" | "light";
 
-export { Theme };
+const localStorageKeys = {
+    THEME_KEY: "Theme",
+};
+
+export { localStorageKeys, Theme };
